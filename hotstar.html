@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="hotstar.css">
+    
+    <title>Hotstar</title>
+    <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1150px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+        </style>
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://img.hotstar.com/image/upload/v1656431456/web-images/logo-d-plus.svg">   
+            <div class="button" style="color: #e9c46a;">Subscribe ></div>         
+        </div>
+        <div class="ITEMS border">
+        <p>TV</p>
+        </div>
+        <div class="ITEMS border">
+            <p>MOVIES</p>
+        </div>
+        <div class="ITEMS border">
+            <p>SPORTS</p>
+        </div>
+        <div class="ITEMS border">
+            <p>PREMIUM</p>
+        </div>
+        <div class="search">
+          <input class="seed" placeholder="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <hr>
+        </div>
+        <div class="Subscribe1">SUBSCRIBE</div> 
+        <div class="Login border" >LOGIN</div>
+    </div>
+    <!-- <div class="hero">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/834/1550834-i-cb46c8cd52ef">
+    </div> -->
+
+
+    <!--SLideShow-->
+    <div class="slideshow-container" style="margin-top: 15px;">
+
+        <div class="mySlides fade">
+            <img src="https://img1.hotstarext.com/image/upload/f_auto/sources/r1/cms/prod/6720/1366720-i-c30300a11e8d" style="width:100%" style="position: relative; top: 0; left: 0;">
+
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,h_136/sources/r1/cms/prod/6722/1366722-t-48964025ccfe" style="position: absolute; top: 60px; left: 80px;">
+
+            <p style="position: absolute; top: 210px; left: 80px; color: white;  " ><b>2019 &#x2022; 3h1m &#x2022; 4 Languages &#x2022; U/A 13+</b></p>
+            <pre style="position: absolute; top: 250px; left: 80px; color: #FFFFFFD6; ">
+After devastating events of the Infinity War, the Avengers
+assemble once more to reverse Thanos' action and restore
+the balance of the Universe.
+            </pre>
+            <p style="position: absolute; top: 330px; left: 80px; color: white;" ><b>Superhero | Action | Dark Humour | Fantasy | Alien</b></p>
+            <div class="watchnow border" style="position: absolute; top: 360px; left: 80px; color: white;">
+              <i style="font-size:24px" class="fa">&#xf04b;</i>
+              <b style="margin-left: 10px;">Watch Now</b>
+              <div class="watchlist"></div>
+            </div>
+        </div>
+        
+        <div class="mySlides fade">
+          
+            <img src="https://img1.hotstarext.com/image/upload/f_auto/sources/r1/cms/prod/9546/1369546-i-2752f084c8ed" style="width:100%" style="position: relative; top: 0; left: 0; ">
+
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,h_136/sources/r1/cms/prod/9548/1369548-t-4a605a90e6ca" style="position: absolute; top: 60px; left: 80px; height: 136px; width: 376px;">
+
+            <p style="position: absolute; top: 210px; left: 80px; color: white;  " ><b>2009 &#x2022; 2h49m &#x2022; 2 Languages &#x2022; U/A 13+</b></p>
+            <pre style="position: absolute; top: 250px; left: 80px; color: #FFFFFFD6; ">
+Former marine Jake Sully is developed as an Avatar on a mission
+to Pandora but, he ultimately finds himself torn between two
+worlds.
+            </pre>
+            <p style="position: absolute; top: 330px; left: 80px; color: white;" ><b>Science Fiction | Action | Fantasy | Technology | Alien</b></p>
+            <div class="watchnow border" style="position: absolute; top: 360px; left: 80px; color: white;">
+              <i style="font-size:24px" class="fa">&#xf04b;</i>
+              <b style="margin-left: 10px;">Watch Now</b>
+            </div>
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="https://img1.hotstarext.com/image/upload/f_auto/sources/r1/cms/prod/302/1540302-i-2c762a8182d3" style="width:100%" style="position: relative; top: 0; left: 0; ">
+
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,h_136/sources/r1/cms/prod/301/1540301-t-c00389eb40ff" style="position: absolute; top: 60px; left: 80px; height: 136px; width: 376px;">
+
+            <p style="position: absolute; top: 210px; left: 80px; color: white;  " ><b>2023 &#x2022; 1 Season &#x2022; 5 Languages &#x2022; U/A 16+</b></p>
+            <pre style="position: absolute; top: 250px; left: 80px; color: #FFFFFFD6; ">
+NEW EPISODE EVERY WEDNESDAY AT 12:30 PM. Nick Fury 
+learns of cladestine invasion of Earth by a faction of
+shapeshifting Skrulls. Together with his allies,
+he must race...
+
+            </pre>
+            <p style="position: absolute; top: 330px; left: 80px; color: white;" ><b>Action | Adventure | Fantasy | Science Fiction | Superhero</b></p>
+            <div class="watchnow border" style="position: absolute; top: 360px; left: 80px; color: white;">
+              <i style="font-size:24px" class="fa">&#xf04b;</i>
+              <b style="margin-left: 10px;">Watch Now</b>
+            </div>
+
+            
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+       
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+        <div>
+          <div class="video-card-container">
+            <div class="video-card">
+              <img src="image/disney.PNG" class="video-card-image">
+              <video src="disney.mp4" muted loop class="card-video"></video>
+            </div>
+
+            <div class="video-card">
+              <img src="image/pixar.PNG" class="video-card-image">
+              <video src="pixar.mp4" muted loop class="card-video"></video>
+            </div>
+            <div class="video-card">
+              <img src="image/geographic.PNG" class="video-card-image">
+              <video src="geographic.mp4" muted loop class="card-video"></video>
+            </div>
+            <div class="video-card">
+              <img src="image/marvel.PNG" class="video-card-image">
+              <video src="marvel.mp4" muted loop class="card-video"></video>
+            </div>
+            <div class="video-card">
+              <img src="image/star-wars.PNG" class="video-card-image">
+              <video src="star-war.mp4" muted loop class="card-video"></video>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="title">Recomended for You</h1>
+          <div class="movie-list">
+            <button class="pre-btn" title="btn"><img src="image/pre.png"></button>
+            <button class="nxt-btn" title="btn"><img src="image/nxt.png"></button>
+
+            <div class="card-container">
+              <div class="card">
+                <img src="image/poster 1.png" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>              
+              </div>
+
+              <div class="card">
+                <img src="image/poster 2.png" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+
+              <div class="card">
+                <img src="image/poster 3.png" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+            
+              <div class="card">
+                <img src="image/poster 4.png" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+
+              <div class="card">
+                <img src="image/poster 5.png" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+
+              <div class="card">
+                <img src="image/poster 6.png" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+
+              <div class="card">
+                <img src="image/poster 7.png" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+
+              <div class="card">
+                <img src="image/poster 8.png" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+
+              <div class="card">
+                <img src="image/poster 9.png" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+
+              <div class="card">
+                <img src="image/poster 10.png" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+
+              <div class="card">
+                <img src="image/poster 11.png" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+
+              <div class="card">
+                <img src="image/poster 12.png" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+            </div>  
+          </div>
+
+
+          <!--Popular-->
+
+          <h1 class="title">Popular Movies</h1>
+          <div class="movie-list">
+            <button class="pre-btn" title="btn"><img src="image/pre.png"></button>
+            <button class="nxt-btn" title="btn"><img src="image/nxt.png"></button>
+
+            <div class="card-container">
+              <div class="card">
+                <img src="chhichhore.webp" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>              
+              </div>
+
+              <div class="card">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7416/957416-v" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+
+              <div class="card">
+                <img src="Housefull4.webp" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+            
+              <div class="card">
+                <img src="missionMangal.webp" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+
+              <div class="card">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/old_images/vertical/MOVIE/3314/1770003314/1770003314-v" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+
+              <div class="card">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/old_images/vertical/MOVIE/5403/1770015403/1770015403-v" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+
+              <div class="card">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7676/647676-v" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+
+              <div class="card">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/old_images/vertical/MOVIE/2789/1000212789/1000212789-v" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+
+              <div class="card">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/8105/1118105-v-cf275eb3c3f2" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+
+              <div class="card">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/old_images/vertical/MOVIE/4358/1000164358/1000164358-v" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+
+              <div class="card">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/old_images/vertical/MOVIE/4189/1000074189/1000074189-v" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+
+              <div class="card">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/5071/635071-v" class="card-img">
+                <div class="card-body">
+                <h2 class="name">Movie Name</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod adipisci a! Error libero odio sed, quam velit iste dignissimos modi voluptatibus architecto eaque dicta illo quas, enim aperiam ratione?</h6>
+                <div class="watchlist-btn">Add to Watchlist</div>
+              </div>
+              </div>
+            </div>  
+          </div>
+
+          <footer>
+            <!-- Add footer content such as links, social media icons, and copyright information -->
+            <p>Conditions of Use Privacy Notice Your Ads Privacy Choices</p>
+            <p>© 1996-2023, Hotstar.com, Inc. or its affiliates</p>
+          </footer>
+        
+       
+        <script src="hotstar.js" async></script>
+
+        
+</body>
+</html>
